@@ -1,0 +1,33 @@
+p {
+    color: #5e748e;
+    font-size: 0.75rem;
+}
+
+.contactList-container {
+    padding: 1rem;
+}
+
+.contact {
+    margin: 1rem;
+    padding: 0.5rem;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons {
+    margin: 0 1rem;
+}
+
+.button {
+    font-size: 1.4rem;
+    border: transparent;
+    background: transparent;
+    cursor: pointer;
+}
