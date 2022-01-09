@@ -12,8 +12,6 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!name || !phone) {
-      // any field is empty display error
-      console.log("Error");
     } else if (isEditing && name && phone) {
       setList(
         list.map((item) => {

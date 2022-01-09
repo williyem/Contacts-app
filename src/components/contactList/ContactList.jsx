@@ -7,18 +7,25 @@ const ContactList = ({ list, handleEdit, handleDelete }) => {
     <>
       <div className="contactList-container form">
         <h1>Contact List</h1>
-        <p>Click to view</p>
+
         {list.map((item) => {
-          const { name, id } = item;
+          const { name, id, phone } = item;
           return (
             <div className="contact" key={id}>
               <div className="details">
                 <span className="name">{name}</span>
+                <span>{phone}</span>
                 <div className="icons">
-                  <button className="button" onClick={() => handleEdit(id)}>
+                  <button
+                    className="button edit"
+                    onClick={() => handleEdit(id)}
+                  >
                     <AiOutlineEdit />
                   </button>
-                  <button className="button" onClick={() => handleDelete(id)}>
+                  <button
+                    className="button delete"
+                    onClick={() => handleDelete(id)}
+                  >
                     <AiOutlineDelete />
                   </button>
                 </div>
